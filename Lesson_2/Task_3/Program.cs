@@ -6,10 +6,21 @@ namespace Task_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите число:");
-            var number = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Введите целое число:");
 
-            Console.WriteLine(number % 2 == 0 ? "Число четное" : "Число нечетное");
+            var number = Console.ReadLine();
+
+            var isInt = int.TryParse(number, out var item);
+
+            if (isInt)
+            {
+                Console.WriteLine(item % 2 == 0 ? "Число четное" : "Число нечетное");
+            }
+            else
+            {
+                Console.WriteLine("Число не четное!");
+            }
         }
     }
 }
