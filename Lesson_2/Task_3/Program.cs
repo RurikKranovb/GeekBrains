@@ -6,7 +6,6 @@ namespace Task_3
     {
         static void Main(string[] args)
         {
-            
             Console.WriteLine("Введите целое число:");
 
             var number = Console.ReadLine();
