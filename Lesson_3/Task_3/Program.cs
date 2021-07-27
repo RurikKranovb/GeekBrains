@@ -6,7 +6,17 @@ namespace Task_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var item = "Hello";
+
+            var items = new char[item.Length];
+
+
+            for (var i = 0; i < items.Length; i++)
+            {
+                items[i] = item[item.Length - 1 - i];
+
+                Console.WriteLine(items);
+            }
         }
     }
 }
