@@ -9,11 +9,11 @@ namespace Task_2
             Console.WriteLine("Введите числа через пробел:");
             var readLine = Console.ReadLine();
 
-            var i = 0;
+            double i = 0;
             if (readLine == null) return;
             foreach (var item in readLine.Split(" "))
             {
-                i += int.Parse(item);
+                i += double.Parse(item);
             }
 
             Console.WriteLine(i);
