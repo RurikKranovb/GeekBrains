@@ -18,9 +18,7 @@ namespace Task_4
 
             foreach (var item in employees.Where(employee => employee.Age > 40))
             {
-                Console.WriteLine($"Имя: {item.FistName}, Фамилия: {item.LastName}," +
-                                  $" Отчество: {item.Patronymic}, Должность: {item.Position}," +
-                                  $" Зарплата: {item.Salary}, Телефон: {item.Telephone}, Возраст: {item.Age}");
+                item.GetData();
             }
         }
     }
