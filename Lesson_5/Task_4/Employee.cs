@@ -39,5 +39,11 @@ namespace Task_4
         public byte Age { get; set; }
 
 
+        public void GetData()
+        {
+            Console.WriteLine($"Имя: {FistName}, Фамилия: {LastName}," +
+                              $" Отчество: {Patronymic}, Должность: {Position}," +
+                              $" Зарплата: {Salary}, Телефон: {Telephone}, Возраст: {Age}");
+        }
     }
 }
