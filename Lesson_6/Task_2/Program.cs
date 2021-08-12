@@ -43,23 +43,23 @@ namespace Task_2
             }
             catch (MyArrayDataException e)
             {
-                var value = e.StringItems.GetValue(e.Column, e.Row);
-                string[,] newStringItem = new string[,]{};
+                //var value = e.StringItems.GetValue(e.Column, e.Row);
+                //string[,] newStringItem = new string[,]{};
 
-                var index = 0;
+                //var index = 0;
 
-                foreach (var item in newStringItem)
-                {
+                //foreach (var item in newStringItem)
+                //{
                     
-                    //if (ReferenceEquals(value, item))
-                    //{
-                    //    item.Remove(index);
-                    //}
+                //    //if (ReferenceEquals(value, item))
+                //    //{
+                //    //    item.Remove(index);
+                //    //}
 
-                    index++;
-                }
+                //    index++;
+                //}
 
-                TestMethod(newStringItem);
+                //TestMethod(newStringItem);
             }
             catch (Exception e)
             {
